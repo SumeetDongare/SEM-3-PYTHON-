@@ -195,7 +195,20 @@ s2.display()
 s2.is_marks_valid(s2.marks)
 s2.calculate_grade()
 print(s2.college)
-
+"""
+Name: Sumeet
+Roll No: 57
+Marks: 72.9
+Branch: Computer Science
+Valid marks
+PASS
+MIT
+Krutik
+27
+80
+Valid marks
+PASS
+MIT """
 #===============================================================================================================================================================================================================================================================================================#
 # Encapsulation: Making marks private and providing getter and setter methods to access and modify it.
 class Student:
@@ -221,6 +234,8 @@ s3 = Student("Alice", 101, 85)
 s3.display()  # Display initial marks
 s3.set_marks(90)  # Update marks using setter
 s3.display()  # Display updated marks
+"""Name: Alice, Roll No: 101, Marks: 85
+Name: Alice, Roll No: 101, Marks: 90"""
 #===============================================================================================================================================================================================================================================================================================#
 #Abstraction --> Abstraction = Parent class sets the rule → Child class must follow the rule.
 from abc import ABC, abstractmethod
@@ -242,6 +257,7 @@ class Student(Person):
 
 student = Student()
 student.display_role()
+#Role: Student
 #===============================================================================================================================================================================================================================================================================================#
 class Student:
     def __init__(self, name, marks):
@@ -263,3 +279,9 @@ print("Without __str__ method:\n", student)  # This will print the default objec
 
 student = Student("Sumeet", 85)
 print("With __str__ method:\n",student)  # This will call the __str__ method and print meaningful information
+"""
+Without __str__ method:
+ <__main__.Students object at 0x00000221093C9160>
+With __str__ method:
+ Name: Sumeet, Marks: 85
+ """
