@@ -65,10 +65,11 @@ def leaf_nodes(root):
 root = None
 
 n = int(input("Enter number of nodes: "))
+values = list(map(int,input().split()))
 
-for i in range(n):
-    data = int(input("Enter value: "))
-    root = insert(root, data)
+for value in values:
+    # data = int(input("Enter value: "))
+    root = insert(root, value)
 
 print("\nLevel order traversal:")
 level_order(root)
