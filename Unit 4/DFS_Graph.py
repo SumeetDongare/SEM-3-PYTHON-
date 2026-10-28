@@ -1,6 +1,6 @@
 #create a graph using an Adjacency Matrix and perform Depth First Search (DFS)
 
-# Create graph using Adjacency Matrix
+#1. Create graph using Adjacency Matrix
 n = int(input("Enter number of vertices: "))
 
 graph = []
@@ -14,8 +14,9 @@ for i in range(n):
 e = int(input("Enter number of edges: "))
 
 for i in range(e):
-    u = int(input("Enter starting vertex: "))
-    v = int(input("Enter ending vertex: "))
+    # u = int(input("Enter starting vertex: "))
+    # v = int(input("Enter ending vertex: "))
+    u,v = map(int,input().split())
 
     graph[u][v] = 1
     graph[v][u] = 1
@@ -55,13 +56,14 @@ for i in range(n):
 e = int(input("Enter number of edges: "))
 
 for i in range(e):
-    u = int(input("Enter starting vertex: "))
-    v = int(input("Enter ending vertex: "))
+    # u = int(input("Enter starting vertex: "))
+    # v = int(input("Enter ending vertex: "))
+    u,v = map(int,input().split())      #Using because the input will be in a single line.
 
     graph[u].append(v)
     graph[v].append(u)
 
-# Display Adjacency List
+#2. Display Adjacency List
 print("Adjacency List:")
 for i in range(n):
     print(i, ":", graph[i])
