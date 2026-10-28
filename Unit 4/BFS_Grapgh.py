@@ -13,9 +13,9 @@ for i in range(n):
 e = int(input("Enter number of edges: "))
 
 for i in range(e):
-    u = int(input("Enter starting vertex: "))
-    v = int(input("Enter ending vertex: "))
-
+    # u = int(input("Enter starting vertex: "))
+    # v = int(input("Enter ending vertex: "))
+    u,v = map(int,input().split())
     graph[u][v] = 1
     graph[v][u] = 1
 
@@ -57,9 +57,9 @@ for i in range(n):
 e = int(input("Enter number of edges: "))
 
 for i in range(e):
-    u = int(input("Enter starting vertex: "))
-    v = int(input("Enter ending vertex: "))
-
+    # u = int(input("Enter starting vertex: "))
+    # v = int(input("Enter ending vertex: "))
+    u,v = map(int,input().split())
     graph[u].append(v)
     graph[v].append(u)
 
